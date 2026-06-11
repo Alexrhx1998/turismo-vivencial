@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:40px;
+    background:#222;
+    color:white;
+}
+
+section{
+    padding:40px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.card img{
+    width:100%;
+    display:block;
+    transition:0.4s;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+figcaption{
+    padding:15px;
+    background:#f4f4f4;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+caption{
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+th{
+    background:#222;
+    color:white;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:center;
+}
+
+tbody tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+}
+
+input,
+select{
+    width:100%;
+    padding:10px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px;
+    width:100%;
+    cursor:pointer;
+}

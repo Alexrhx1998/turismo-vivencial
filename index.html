@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Vivencial de Lujo y Moda Sostenible</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Turismo Vivencial de Lujo y Moda Sostenible</h1>
+    <p>Experiencias exclusivas en destinos únicos del Perú.</p>
+</header>
+
+<section>
+    <h2>Destinos Destacados</h2>
+
+    <div class="gallery">
+
+        <figure class="card">
+            <picture>
+                <source media="(min-width:1024px)" srcset="img/machupicchu.jpeg">
+                <source media="(min-width:768px)" srcset="img/machupicchu.jpeg">
+                <img src="img/machupicchu.jpeg"
+                     alt="Vista panorámica de Machu Picchu">
+            </picture>
+
+            <figcaption>
+                <h3>Machu Picchu</h3>
+                <p>Experiencia premium con guías especializados.</p>
+            </figcaption>
+        </figure>
+
+        <figure class="card">
+            <picture>
+                <source media="(min-width:1024px)" srcset="img/valle.jpeg">
+                <source media="(min-width:768px)" srcset="img/valle.jpeg">
+                <img src="img/valle.jpeg"
+                     alt="Paisaje del Valle Sagrado">
+            </picture>
+
+            <figcaption>
+                <h3>Valle Sagrado</h3>
+                <p>Cultura viva y alojamiento de lujo.</p>
+            </figcaption>
+        </figure>
+
+        <figure class="card">
+            <picture>
+                <source media="(min-width:1024px)" srcset="img/montana7colores.jpeg">
+                <source media="(min-width:768px)" srcset="img/montana7colores.jpeg">
+                <img src="img/montana7colores.jpeg"
+                     alt="Montaña de Siete Colores">
+            </picture>
+
+            <figcaption>
+                <h3>Montaña de 7 Colores</h3>
+                <p>Aventura exclusiva y paisajes únicos.</p>
+            </figcaption>
+        </figure>
+
+    </div>
+</section>
+
+<section>
+    <h2>Paquetes Turísticos</h2>
+
+    <table>
+        <caption>Comparación de paquetes turísticos</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Paquete</th>
+                <th scope="col">Destinos</th>
+                <th scope="col">Hotel</th>
+                <th scope="col">Moda</th>
+                <th scope="col">Costo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Silver</td>
+                <td>1</td>
+                <td>4★</td>
+                <td>No</td>
+                <td>$500</td>
+            </tr>
+
+            <tr>
+                <td>Gold</td>
+                <td>2</td>
+                <td>5★</td>
+                <td>Sí</td>
+                <td>$1500</td>
+            </tr>
+
+            <tr>
+                <td>Platinum</td>
+                <td>3</td>
+                <td>5★ Premium</td>
+                <td>Sí</td>
+                <td>$3000</td>
+            </tr>
+        </tbody>
+
+    </table>
+</section>
+
+<section>
+    <h2>Reserva tu experiencia</h2>
+
+    <form>
+
+        <label for="nombre">Nombre completo</label>
+        <input
+            type="text"
+            id="nombre"
+            minlength="5"
+            required>
+
+        <label for="correo">Correo institucional</label>
+        <input
+            type="email"
+            id="correo"
+            required>
+
+        <label for="telefono">Teléfono</label>
+        <input
+            type="tel"
+            id="telefono"
+            pattern="[0-9]{9}"
+            required>
+
+        <label for="fecha">Fecha de viaje</label>
+        <input
+            type="date"
+            id="fecha"
+            min="2026-06-10"
+            required>
+
+        <label for="destino">Destino preferido</label>
+        <select id="destino" required>
+            <option value="">Seleccione</option>
+            <option>Machu Picchu</option>
+            <option>Valle Sagrado</option>
+            <option>Montaña de 7 Colores</option>
+        </select>
+
+        <label for="presupuesto">
+            Presupuesto Máximo
+        </label>
+
+        <input
+            type="range"
+            id="presupuesto"
+            min="500"
+            max="5000">
+
+        <button type="submit">
+            Reservar
+        </button>
+
+    </form>
+
+</section>
+
+</body>
+</html>
